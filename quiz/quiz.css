@@ -126,7 +126,8 @@ button {
   text-align: center;
   padding: 1rem;
   border: 1px solid;
-  max-width: 400px;
+  font-size: larger;
+  max-width: 600px;
   margin-bottom: 2rem;
   background-repeat: repeat;
   background: conic-gradient(
