@@ -28,12 +28,13 @@ quizForm.addEventListener('submit',(e)=>{
 
     console.log(score);
     document.getElementById("result").innerText = "Your Score is "+score;
-
+    submitBtn.style.visibility = "hidden";
 
 });
 
 resetBtn.addEventListener("click", ()=>{
     document.getElementById("formQuiz").reset();
+    submitBtn.style.visibility = "visible";
     score=0;
     for(var i=0;i<questionBlocks.length;i++)
     {
