@@ -32,6 +32,9 @@ nav a {
 }
 
 main {
+  display: block;
+  margin: 4rem;
+  margin-bottom: 10rem;
 }
 
 @media screen and(max-width : 700px) {
@@ -52,6 +55,7 @@ main h1 {
   display: block;
   margin: auto;
   margin-top: 150px;
+
   font-size: 100px;
   background-repeat: repeat;
   background: conic-gradient(
@@ -75,7 +79,7 @@ ul {
   padding-left: 0;
 }
 
-li {
+.menu-li {
   display: inline-block;
   border: 2px solid #4c4c4c;
   border-radius: 2rem;
@@ -83,14 +87,33 @@ li {
   margin: 1rem;
 }
 
-li a {
+.menu-li a {
   color: var(--text-color);
   text-decoration: none;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+
+.footer {
   background-color: var(--footer-color);
+  text-align: center;
+  padding-top: 0.25rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  display: inline;
+  padding: 1rem;
+}
+.footer li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.footer-footer {
+  color: var(--text-color);
+  font-weight: lighter;
+  padding-bottom: 1rem;
 }
