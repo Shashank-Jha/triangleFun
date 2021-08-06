@@ -153,3 +153,7 @@ footer {
   height: 60px;
   background-color: var(--footer-color);
 }
+
+.btn-div {
+  display: inline-block;
+}

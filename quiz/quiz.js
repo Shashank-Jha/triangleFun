@@ -28,13 +28,14 @@ quizForm.addEventListener('submit',(e)=>{
 
     console.log(score);
     document.getElementById("result").innerText = "Your Score is "+score;
-    submitBtn.style.visibility = "hidden";
+    // submitBtn.style.visibility = "hidden";
+    document.querySelector(".submit-btn-div").style.display = "none";
 
 });
 
 resetBtn.addEventListener("click", ()=>{
     document.getElementById("formQuiz").reset();
-    submitBtn.style.visibility = "visible";
+    document.querySelector(".submit-btn-div").style.display = "inline-block";
     score=0;
     for(var i=0;i<questionBlocks.length;i++)
     {
